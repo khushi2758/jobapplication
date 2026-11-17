@@ -1,0 +1,88 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #f3f3f1;
+  --foreground: #252525;
+  --muted: #858585;
+  --surface: #fafaf9;
+  --border: #e5e5e2;
+  --accent: #ff735f;
+  --accent-light: #ffe3dc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dashboard-container {
+  width: min(1440px, 100%);
+  margin: auto;
+  padding: 24px 5%;
+}
+
+.surface-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.025);
+}
+
+.muted-text {
+  color: var(--muted);
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+.match-circle {
+  width: 92px;
+  height: 92px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.match-circle span:first-child {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.match-circle span:last-child {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+::selection {
+  background: var(--accent-light);
+  color: #252525;
+}
