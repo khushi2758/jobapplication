@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "ArchintX Job Apply and Skill-Gap Advisor Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:jobs": "node src/seed/seedJobs.js",
+    "seed:staff": "node src/seed/seedStaff.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
